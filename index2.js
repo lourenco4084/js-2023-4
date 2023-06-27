@@ -37,11 +37,32 @@ let total = preco * qtd
 // }
 
 
-let contador = 0
+// let contador = 0
 
-while (contador < 10) {
+// while (contador < 10) {
     
-    console.log(contador);
-    contador++
+//     console.log(contador);
+//     contador++
+// }
+
+let saida = "entrar"
+let num = 0
+
+while (saida == "entrar") {
+    num = prompt("Digite um numero maior que 1")
+    if (num > 1) {
+        saida = "sair"
+    }
 }
 
+for (let index = 0; index <= num; index++) {
+   
+         console.log(index);
+    
+ }
+
+// for (let index = 0; index <= 100; index++) {
+//    if (index % 2 == 0) {
+//         console.log(index);
+//    }
+// }
