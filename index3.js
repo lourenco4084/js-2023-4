@@ -42,12 +42,38 @@
 
 // let pessoa = ["Nome", 22, "email"]
 
-let pessoa = {
-    "email": "everton@gmail.com",
-    "nome": "Everton",
-    "idade": 29,
-    "sobrenome": "Figueiredo"
+// let pessoa = {
+//     "email": "everton@gmail.com",
+//     "nome": "Everton",
+//     "idade": 29,
+//     "sobrenome": "Figueiredo"
+// }
+
+// console.log(pessoa);
+// console.log(pessoa.idade);
+
+let controle = "Entra"
+let carrinho = []
+
+while (controle == "Entra") {
+
+    let nome = prompt("Digite o nome do produto")
+    let qtd = prompt("Digite a qtd do produto")
+    let valor = prompt("Digite o valor do produto")
+
+    var produto = {
+        nome,
+        qtd: qtd,
+        valor: valor
+    }
+
+    carrinho[carrinho.length] = produto
+
+    let resposta = prompt("Deseja inserir outro produto?")
+    console.log(resposta);
+    if (resposta == "Não") {
+        controle = "Sair"
+    }
 }
 
-console.log(pessoa);
-// console.log(pessoa.idade);
+console.log(produto);
