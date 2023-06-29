@@ -26,12 +26,28 @@
 //     console.log(`O numero do usuario é ${numeros[index]}`);
 // }
 
-let nomes = ["Mariah", "Marcelo", "Alessandra", "Gabriel"]
+// let nomes = ["Mariah", "Marcelo", "Alessandra", "Gabriel"]
 
-let sobrenome = "Figueiredo"
+// let sobrenome = "Figueiredo"
 
-console.log(sobrenome.length);
+// console.log(sobrenome.length);
 
-for (let index = 0; index < nomes.length; index++) {
-    console.log(`Seu nome é: ${nomes[nomes.length - 1]}`);    
+// for (let index = 0; index < nomes.length; index++) {
+//     console.log(`Seu nome é: ${nomes[nomes.length - 1]}`);    
+// }
+
+// ------------------------------------
+// OBJETO
+// ------------------------------------
+
+// let pessoa = ["Nome", 22, "email"]
+
+let pessoa = {
+    "email": "everton@gmail.com",
+    "nome": "Everton",
+    "idade": 29,
+    "sobrenome": "Figueiredo"
 }
+
+console.log(pessoa);
+// console.log(pessoa.idade);
