@@ -37,5 +37,14 @@ function somarQtd() {
     return totalQtd
 }
 
+function somarPreco() {
+    let totalPreco = 0
+
+    for (let index = 0; index < carrinho.itens.length; index++) {
+        totalPreco += carrinho.itens[index].qtd * carrinho.itens[index].preco
+    }
+
+    return totalPreco
+}
 
 
