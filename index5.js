@@ -67,6 +67,7 @@ class Carrinho {
             subtotalTemp += produto.qtd * produto.preco
         })
         this.subtotal = subtotalTemp
+        this.atualizarTotal()
     }
 
     addItem(nome, qtd, preco){
@@ -77,7 +78,12 @@ class Carrinho {
         }
         this.itens.push(produto)
         this.atualizarSubtotal()
-    }   
+    }
+
+    atualizarTotal(){
+        let valorTotal = this.subtotal + this.frete;
+        this.total = valorTotal;
+    }
 }
 
 let carrinho = new Carrinho()
