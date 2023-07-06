@@ -84,6 +84,10 @@ class Carrinho {
         let valorTotal = this.subtotal + this.frete;
         this.total = valorTotal;
     }
+
+    retornarItens(){
+        return this.itens
+    }
 }
 
 let carrinho = new Carrinho()
