@@ -1,57 +1,56 @@
-// let pessoas = [
-//     {
-//         nome: "Pedro",
-//         idade: 22,
-//         profissao: "Dev Junior",
-//         email: "pedro@gmail.com",
-//         cnh: true
-//     },
-// ]
+let pessoas =[{         
+    nome: "Pedro",
+    idade: 22,
+    profissao: "Dev Junior",
+    email: "pedro@gmail.com",
+    cnh: true
+   },
+ ]
 
-// function visualizarPessoas() {
-//     pessoas.map(pessoa => {
-//         console.log(pessoa);
-//     })
-// }
+ function visualizarPessoas() {
+ pessoas.map(pessoa => {
+ console.log(pessoa);
+     })
+}
 
-// function addPessoa(nome = "", idade = 0, profissao = "", email = "", cnh = false) {
-//     let pessoa = {
-//         nome,
-//         idade,
-//         profissao,
-//         email,
-//         cnh
-//     }
+ function addPessoa(nome = "", idade = 0, profissao = "", email = "", cnh = false) {
+     let pessoa = {
+        nome,
+        idade,
+        profissao,
+        email,
+        cnh
+     }
 
-//     pessoas.push(pessoa)
-//     visualizarPessoas()
-// }
+     
+pessoas.push(pessoa)
+     visualizarPessoas()
+ }
 
-// // Retorna a pessoa com idade menor que 20
-// function idadeMin() {
-//     let pessoasIdade = pessoas.filter(pessoa => pessoa.idade < 20)
+  Retorna a pessoa com idade menor que 20
+ function idadeMin() {
+    let pessoasIdade = pessoas.filter(pessoa => pessoa.idade < 20)
 
-//     return pessoasIdade
-// }
+     return pessoasIdade
+ }
 
-// function filtrarPorNome(nome) {
-//     return pessoas.find(pessoa => pessoa.nome === nome);
-// }
-// ----------------------------------
+ function filtrarPorNome(nome) {
+     return pessoas.find(pessoa => pessoa.nome === nome);
+ }
+ ----------------------------------
 
-// class Pessoa {
-//     constructor(nome = "",idade = 0){
-//         this.nome = nome
-//         this.idade = idade
-//     }
+ class Pessoa {
+ constructor(nome = "",idade = 0){
+ this.nome = nome
+ this.idade = idade
+}
 
-//     retornaNome(){
-//         return this.nome
-//     }
-// }
+retornaNome(){
+return this.nome
+}
 
-// let pessoa = new Pessoa("Everton", 25)
-// let pessoa1 = new Pessoa("Daniela", 18)
+ let pessoa = new Pessoa("Everton", 25){
+ let pessoa1 = new Pessoa("Daniela", 18)
 
 class Carrinho {
     constructor(){
